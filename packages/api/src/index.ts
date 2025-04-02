@@ -1,8 +1,17 @@
 import express, { RequestHandler } from 'express'; // Remove unused Request, Response
 import axios from 'axios';
 import * as cheerio from 'cheerio'; // Change import syntax
+import cors from 'cors'; // corsミドルウェアをインポート
 
 const app = express();
+
+// CORSミドルウェアを設定
+// フロントエンドのオリジンを許可
+app.use(
+  cors({
+    origin: 'https://109cinemas.net',
+  })
+);
 // const port: number = 3000; // Remove unused port variable
 
 // Define an interface for the rating response

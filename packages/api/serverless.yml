@@ -6,6 +6,8 @@ provider:
   name: aws
   runtime: nodejs22.x # Or a newer supported version
   region: ap-northeast-1 # Specify your desired AWS region
+  httpApi:
+    cors: true
 
 plugins:
   # - serverless-plugin-typescript # Removed as v4 has built-in TS support
