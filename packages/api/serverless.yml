@@ -1,0 +1,28 @@
+service: 109cinemas-with-star-api
+
+frameworkVersion: "4" # Update to match installed version
+
+provider:
+  name: aws
+  runtime: nodejs22.x # Or a newer supported version
+  region: ap-northeast-1 # Specify your desired AWS region
+
+plugins:
+  # - serverless-plugin-typescript # Removed as v4 has built-in TS support
+  - serverless-offline # For local testing
+
+package:
+  individually: true # Package functions separately
+
+functions:
+  rating:
+    handler: src/lambda.handler # Entry point for the Lambda function
+    events:
+      - http:
+          path: rating
+          method: get
+          cors: true # Enable CORS for browser access
+
+custom:
+  serverless-offline:
+    httpPort: 3001 # Use a different port than the regular dev server if needed
