@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2016", // Node.jsのバージョンに合わせて調整可能
+    "module": "CommonJS", // Node.js環境ではCommonJSが一般的
+    "outDir": "./dist", // コンパイル後のJSファイルの出力先
+    "rootDir": "./src", // TypeScriptソースファイルのルートディレクトリ (後で作成)
+    "strict": true, // 厳格な型チェックを有効化
+    "esModuleInterop": true, // CommonJSモジュールとの相互運用性を向上
+    "skipLibCheck": true, // ライブラリの型チェックをスキップ
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字を区別
+    "resolveJsonModule": true // JSONファイルのインポートを許可
+  },
+  "include": ["src/**/*"], // コンパイル対象のファイル
+  "exclude": ["node_modules", "**/*.spec.ts"] // コンパイル除外対象
+}
