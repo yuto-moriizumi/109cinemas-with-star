@@ -1,9 +1,9 @@
-import express, { Request, Response, RequestHandler } from "express"; // Use import syntax and add types, Add RequestHandler
-import axios from "axios";
-import * as cheerio from "cheerio"; // Change import syntax
+import express, { RequestHandler } from 'express'; // Remove unused Request, Response
+import axios from 'axios';
+import * as cheerio from 'cheerio'; // Change import syntax
 
 const app = express();
-const port: number = 3000; // Add type for port
+// const port: number = 3000; // Remove unused port variable
 
 // Define an interface for the rating response
 interface RatingResponse {
@@ -24,7 +24,8 @@ const ratingHandler: RequestHandler = async (req, res) => {
   const title = req.query.title as string | undefined; // Type assertion for title
 
   if (!title) {
-    res.status(400).json({ error: "Movie title is required" }); // Remove return
+    // Add ErrorResponse type annotation
+    res.status(400).json({ error: 'Movie title is required' } as ErrorResponse);
     return; // Explicitly return void here
   }
 
@@ -34,7 +35,7 @@ const ratingHandler: RequestHandler = async (req, res) => {
     const html = response.data;
     const $ = cheerio.load(html);
 
-    const ratingElement = $(".rating-star").first();
+    const ratingElement = $('.rating-star').first();
     let rating: number | null = null; // Add type for rating
 
     if (ratingElement.length > 0) {
@@ -47,34 +48,39 @@ const ratingHandler: RequestHandler = async (req, res) => {
     }
 
     if (rating !== null) {
+      // Add RatingResponse type annotation
       res.json({
         title: title,
         rating: rating,
-        source: "映画.com",
+        source: '映画.com',
         searchUrl: searchUrl,
-      });
+      } as RatingResponse);
     } else {
-      res
-        .status(404)
-        .json({ error: "Rating not found on 映画.com", searchUrl: searchUrl });
+      // Add ErrorResponse type annotation
+      res.status(404).json({
+        error: 'Rating not found on 映画.com',
+        searchUrl: searchUrl,
+      } as ErrorResponse);
     }
   } catch (error) {
-    console.error("Error scraping 映画.com:", error);
+    console.error('Error scraping 映画.com:', error);
     // Type guard for AxiosError
     if (axios.isAxiosError(error)) {
+      // Add ErrorResponse type annotation
       res.status(500).json({
         error: `Failed to fetch rating from 映画.com: ${error.message}`,
-      });
+      } as ErrorResponse);
     } else {
-      res
-        .status(500)
-        .json({ error: "An unexpected error occurred while fetching rating." });
+      // Add ErrorResponse type annotation
+      res.status(500).json({
+        error: 'An unexpected error occurred while fetching rating.',
+      } as ErrorResponse);
     }
   }
 };
 
 // Register the handler
-app.get("/rating", ratingHandler);
+app.get('/rating', ratingHandler);
 
 // Remove app.listen() as serverless-http or serverless-offline will handle server lifecycle
 // app.listen(port, () => {

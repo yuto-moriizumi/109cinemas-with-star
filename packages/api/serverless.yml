@@ -1,6 +1,6 @@
 service: 109cinemas-with-star-api
 
-frameworkVersion: "4" # Update to match installed version
+frameworkVersion: '4' # Update to match installed version
 
 provider:
   name: aws

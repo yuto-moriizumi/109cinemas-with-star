@@ -24,6 +24,8 @@
     "@types/cheerio": "^0.22.35",
     "@types/express": "^5.0.1",
     "@types/node": "^22.13.17",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
     "nodemon": "^3.1.9",
     "serverless": "^4.10.1",
     "serverless-offline": "^14.4.0",
