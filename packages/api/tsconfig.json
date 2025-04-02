@@ -2,15 +2,15 @@
   "compilerOptions": {
     "target": "ES2022", // Use a more modern target for ESM
     "module": "NodeNext", // Use Node.js ESM module system
-    "moduleResolution": "NodeNext", // Use Node.js ESM module resolution
+    "moduleResolution": "NodeNext", // Revert back to NodeNext
     "outDir": "./dist",
-    "rootDir": "./src",
+    // "rootDir": "./src", // rootDir を削除
     "strict": true,
     "esModuleInterop": true, // Still useful for CJS interop if needed
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "vitest.config.ts"], // vitest.config.ts を追加
   "exclude": ["node_modules", "**/*.spec.ts"] // コンパイル除外対象
 }

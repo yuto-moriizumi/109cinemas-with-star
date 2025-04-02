@@ -72,7 +72,6 @@ const ratingHandler: RequestHandler = async (req, res) => {
       } as ErrorResponse);
     }
   } catch (error) {
-    console.error('Error scraping 映画.com:', error);
     // Type guard for AxiosError
     if (axios.isAxiosError(error)) {
       // Add ErrorResponse type annotation
@@ -90,10 +89,5 @@ const ratingHandler: RequestHandler = async (req, res) => {
 
 // Register the handler
 app.get('/rating', ratingHandler);
-
-// Remove app.listen() as serverless-http or serverless-offline will handle server lifecycle
-// app.listen(port, () => {
-//   console.log(`API server listening at http://localhost:${port}`);
-// });
 
 export default app; // Export the app instance
