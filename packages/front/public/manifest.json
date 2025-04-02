@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "109cinemas-with-star",
+  "version": "1.0.0",
+  "description": "",
+  "author": "VolgaKurvar",
+  "content_scripts": [
+    {
+      "matches": ["https://109cinemas.net/nowshowing/"],
+      "js": ["index.js"]
+    }
+  ],
+  "host_permissions": [],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "109cinemas-with-star",
+      "strict_min_version": "109.0"
+    }
+  }
+}
