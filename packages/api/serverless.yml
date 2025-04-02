@@ -1,4 +1,4 @@
-service: 109cinemas-with-star-api
+service: cinemas109-with-star-api
 
 frameworkVersion: '4' # Update to match installed version
 
