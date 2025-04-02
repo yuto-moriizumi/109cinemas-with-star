@@ -1,4 +1,5 @@
-import serverless from 'serverless-http';
+import serverlessExpress from '@vendia/serverless-express';
 import app from './index.js'; // Add .js extension for ESM import
 
-export const handler = serverless(app);
+// @ts-expect-error type definition is not correct
+export const handler = serverlessExpress({ app });

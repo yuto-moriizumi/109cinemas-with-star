@@ -14,6 +14,10 @@ plugins:
 package:
   individually: true # Package functions separately
 
+build:
+  esbuild:
+    configFile: ./esbuild.config.js
+
 functions:
   rating:
     handler: src/lambda.handler # Entry point for the Lambda function

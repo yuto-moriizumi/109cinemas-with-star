@@ -38,6 +38,9 @@ importers:
 
   packages/api:
     dependencies:
+      '@vendia/serverless-express':
+        specifier: ^4.12.6
+        version: 4.12.6
       axios:
         specifier: ^1.8.4
         version: 1.8.4
@@ -317,6 +320,10 @@ packages:
   '@babel/types@7.27.0':
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
+
+  '@codegenie/serverless-express@4.16.0':
+    resolution: {integrity: sha512-TlvAHQysphN3OW6Ziz6AD2DnN9IIy/KkKNImZwMJpwGHHqLATi/9hMg8H8VBRg2L15pGt8ad3R6j6mfvHVWrCg==}
+    engines: {node: '>=18'}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -1098,6 +1105,10 @@ packages:
   '@typescript-eslint/visitor-keys@8.29.0':
     resolution: {integrity: sha512-Sne/pVz8ryR03NFK21VpN88dZ2FdQXOlq3VIklbrTYEt8yXtRFr9tvUhqvCeKjqYk5FSim37sHbooT6vzBTZcg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@vendia/serverless-express@4.12.6':
+    resolution: {integrity: sha512-ePsIPk3VQwgm5nh/JGBtTKQs5ZOF7REjHxC+PKk/CHvhlKQkJuUU365uPOlxuLJhC+BAefDznDRReWxpnKjmYg==}
+    engines: {node: '>=12'}
 
   '@vitejs/plugin-react@4.3.4':
     resolution: {integrity: sha512-SCCPBJtYLdE8PX/7ZQAs1QAZ8Jqwih+0VBLum1EGqmCCQal+MIUqLCzj3ZUy8ufbC0cAM4LRlSTm7IQJwWT4ug==}
@@ -3318,6 +3329,8 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
+  '@codegenie/serverless-express@4.16.0': {}
+
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
@@ -4213,6 +4226,10 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.29.0
       eslint-visitor-keys: 4.2.0
+
+  '@vendia/serverless-express@4.12.6':
+    dependencies:
+      '@codegenie/serverless-express': 4.16.0
 
   '@vitejs/plugin-react@4.3.4(vite@6.2.4(@types/node@22.13.17)(tsx@4.19.3))':
     dependencies:
