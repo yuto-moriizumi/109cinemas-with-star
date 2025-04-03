@@ -163,6 +163,9 @@ importers:
       vite:
         specifier: ^6.2.4
         version: 6.2.4(@types/node@22.13.17)(tsx@4.19.3)
+      vite-plugin-zip-pack:
+        specifier: ^1.2.4
+        version: 1.2.4(vite@6.2.4(@types/node@22.13.17)(tsx@4.19.3))
       vitest:
         specifier: ^3.1.1
         version: 3.1.1(@types/node@22.13.17)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.13.17)(typescript@5.8.2))(tsx@4.19.3)
@@ -3327,6 +3330,11 @@ packages:
     resolution: {integrity: sha512-V+IxPAE2FvXpTCHXyNem0M+gWm6J7eRyWPR6vYoG/Gl+IscNOjXzztUhimQgTxaAoUoj40Qqimaa0NLIOOAH4w==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
+
+  vite-plugin-zip-pack@1.2.4:
+    resolution: {integrity: sha512-QgZEeiWayE2ZvMbkvcqWf94p/Z5YeNHZlkwXWIkkoISjePiWVXKRX2xCGmsURe9acGVdkobZ31dFJuCp3j1hMg==}
+    peerDependencies:
+      vite: '>=2.x'
 
   vite@6.2.4:
     resolution: {integrity: sha512-veHMSew8CcRzhL5o8ONjy8gkfmFJAd5Ac16oxBUjlwgX3Gq2Wqr+qNC3TjPIpy7TPV/KporLga5GT9HqdrCizw==}
@@ -7423,6 +7431,11 @@ snapshots:
       - terser
       - tsx
       - yaml
+
+  vite-plugin-zip-pack@1.2.4(vite@6.2.4(@types/node@22.13.17)(tsx@4.19.3)):
+    dependencies:
+      jszip: 3.10.1
+      vite: 6.2.4(@types/node@22.13.17)(tsx@4.19.3)
 
   vite@6.2.4(@types/node@22.13.17)(tsx@4.19.3):
     dependencies:
