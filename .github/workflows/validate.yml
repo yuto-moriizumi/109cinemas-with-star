@@ -1,13 +1,11 @@
-﻿name: Validate
+name: Validate
 on: push
 jobs:
-  validate:
+  validate: #a
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10 # package.json の packageManager フィールドに合わせる
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -20,3 +18,11 @@ jobs:
         run: pnpm lint
       - name: Test
         run: pnpm -r test
+      - name: Build frontend
+        working-directory: ./packages/front # フロントエンドのディレクトリに移動
+        run: pnpm build
+      - name: Upload frontend artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-build
+          path: packages/front/dist # 複数ファイルが含まれるパスを指定するとzipになる
