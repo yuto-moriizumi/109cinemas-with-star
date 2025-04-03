@@ -14,8 +14,6 @@ function Rating({ movieTitle }: AppProps) {
       setIsLoading(true);
       setError(null);
       try {
-        // APIエンドポイント (デプロイ済み)
-        // movieTitleをURLエンコードしてクエリパラメータとして渡す
         const apiUrl = `https://6t1qt88xqk.execute-api.ap-northeast-1.amazonaws.com/dev/rating?title=${encodeURIComponent(
           movieTitle
         )}`;

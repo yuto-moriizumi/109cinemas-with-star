@@ -35,26 +35,6 @@ articleElements.forEach((articleElement) => {
           <Rating movieTitle={movieTitle} />
         </React.StrictMode>
       );
-    } else {
-      // header が見つからない場合のフォールバック処理 (必要であれば)
-      console.warn(
-        `Header element not found in div.main for movie ID: ${movieId}, Title: ${movieTitle} in article:`,
-        articleElement
-      );
-      // 例えば div.main の末尾に追加するなど
-      const mainElement = articleElement.querySelector('div.main');
-      if (mainElement) {
-        mainElement.appendChild(reviewContainer);
-        ReactDOM.createRoot(reviewContainer).render(
-          <React.StrictMode>
-            <Rating movieTitle={movieTitle} />
-          </React.StrictMode>
-        );
-      } else {
-        console.error(
-          `Main element also not found for movie ID: ${movieId}, Title: ${movieTitle}`
-        );
-      }
     }
   } else {
     if (!movieId)
