@@ -8,6 +8,15 @@ importers:
 
   .:
     devDependencies:
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^8.29.0
+        version: 8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2)
+      '@typescript-eslint/parser':
+        specifier: ^8.29.0
+        version: 8.29.0(eslint@9.23.0)(typescript@5.8.2)
+      '@vitest/coverage-v8':
+        specifier: ^3.1.1
+        version: 3.1.1(vitest@3.1.1(@types/node@22.14.0)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.14.0)(typescript@5.8.2))(tsx@4.19.3))
       eslint:
         specifier: ^9.23.0
         version: 9.23.0
@@ -29,12 +38,21 @@ importers:
       globals:
         specifier: ^16.0.0
         version: 16.0.0
+      msw:
+        specifier: ^2.7.3
+        version: 2.7.3(@types/node@22.14.0)(typescript@5.8.2)
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
+      typescript:
+        specifier: ^5.8.2
+        version: 5.8.2
       typescript-eslint:
         specifier: ^8.29.0
         version: 8.29.0(eslint@9.23.0)(typescript@5.8.2)
+      vitest:
+        specifier: ^3.1.1
+        version: 3.1.1(@types/node@22.14.0)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.14.0)(typescript@5.8.2))(tsx@4.19.3)
 
   packages/api:
     dependencies:
@@ -72,18 +90,6 @@ importers:
       '@types/supertest':
         specifier: ^6.0.3
         version: 6.0.3
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.29.0
-        version: 8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2)
-      '@typescript-eslint/parser':
-        specifier: ^8.29.0
-        version: 8.29.0(eslint@9.23.0)(typescript@5.8.2)
-      '@vitest/coverage-v8':
-        specifier: ^3.1.1
-        version: 3.1.1(vitest@3.1.1(@types/node@22.14.0)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.14.0)(typescript@5.8.2))(tsx@4.19.3))
-      msw:
-        specifier: ^2.7.3
-        version: 2.7.3(@types/node@22.14.0)(typescript@5.8.2)
       nodemon:
         specifier: ^3.1.9
         version: 3.1.9
@@ -99,12 +105,6 @@ importers:
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.14.0)(typescript@5.8.2)
-      typescript:
-        specifier: ^5.8.2
-        version: 5.8.2
-      vitest:
-        specifier: ^3.1.1
-        version: 3.1.1(@types/node@22.14.0)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.14.0)(typescript@5.8.2))(tsx@4.19.3)
 
   packages/front:
     dependencies:
@@ -130,18 +130,9 @@ importers:
       '@types/react-dom':
         specifier: ^19.1.1
         version: 19.1.1(@types/react@19.1.0)
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.29.0
-        version: 8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2)
-      '@typescript-eslint/parser':
-        specifier: ^8.29.0
-        version: 8.29.0(eslint@9.23.0)(typescript@5.8.2)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
         version: 4.3.4(vite@6.2.4(@types/node@22.14.0)(tsx@4.19.3))
-      '@vitest/coverage-v8':
-        specifier: ^3.1.1
-        version: 3.1.1(vitest@3.1.1(@types/node@22.14.0)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.14.0)(typescript@5.8.2))(tsx@4.19.3))
       eslint-plugin-react:
         specifier: ^7.37.4
         version: 7.37.4(eslint@9.23.0)
@@ -154,21 +145,12 @@ importers:
       jsdom:
         specifier: ^26.0.0
         version: 26.0.0
-      msw:
-        specifier: ^2.7.3
-        version: 2.7.3(@types/node@22.14.0)(typescript@5.8.2)
-      typescript:
-        specifier: ^5.8.2
-        version: 5.8.2
       vite:
         specifier: ^6.2.4
         version: 6.2.4(@types/node@22.14.0)(tsx@4.19.3)
       vite-plugin-zip-pack:
         specifier: ^1.2.4
         version: 1.2.4(vite@6.2.4(@types/node@22.14.0)(tsx@4.19.3))
-      vitest:
-        specifier: ^3.1.1
-        version: 3.1.1(@types/node@22.14.0)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.14.0)(typescript@5.8.2))(tsx@4.19.3)
 
 packages:
 
