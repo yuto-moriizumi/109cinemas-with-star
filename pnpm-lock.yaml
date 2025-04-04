@@ -27,8 +27,8 @@ importers:
         specifier: ^5.2.6
         version: 5.2.6(eslint-config-prettier@10.1.1(eslint@9.23.0))(eslint@9.23.0)(prettier@3.5.3)
       eslint-plugin-react:
-        specifier: ^7.37.4
-        version: 7.37.4(eslint@9.23.0)
+        specifier: ^7.37.5
+        version: 7.37.5(eslint@9.23.0)
       eslint-plugin-react-hooks:
         specifier: ^5.2.0
         version: 5.2.0(eslint@9.23.0)
@@ -134,8 +134,8 @@ importers:
         specifier: ^4.3.4
         version: 4.3.4(vite@6.2.5(@types/node@22.14.0)(tsx@4.19.3))
       eslint-plugin-react:
-        specifier: ^7.37.4
-        version: 7.37.4(eslint@9.23.0)
+        specifier: ^7.37.5
+        version: 7.37.5(eslint@9.23.0)
       eslint-plugin-react-hooks:
         specifier: ^5.2.0
         version: 5.2.0(eslint@9.23.0)
@@ -1847,8 +1847,8 @@ packages:
     peerDependencies:
       eslint: '>=8.40'
 
-  eslint-plugin-react@7.37.4:
-    resolution: {integrity: sha512-BGP0jRmfYyvOyvMoRX/uoUeW+GqNj9y16bPQzqAHf3AYII/tDs+jMN0dBVkl88/OZwNGwrVFxE7riHsXVfy/LQ==}
+  eslint-plugin-react@7.37.5:
+    resolution: {integrity: sha512-Qteup0SqU15kdocexFNAJMvCJEfa2xUKNV4CC1xsVMrIIqEy3SQ/rqyxCWNzfrd3/ldy6HMlD2e0JDVpDg2qIA==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
@@ -5734,7 +5734,7 @@ snapshots:
     dependencies:
       eslint: 9.23.0
 
-  eslint-plugin-react@7.37.4(eslint@9.23.0):
+  eslint-plugin-react@7.37.5(eslint@9.23.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlast: 1.2.5
