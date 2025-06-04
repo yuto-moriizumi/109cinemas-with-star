@@ -29,7 +29,7 @@
     "@types/node": "^22.15.29",
     "@types/supertest": "^6.0.3",
     "nodemon": "^3.1.10",
-    "serverless": "^4.15.1",
+    "serverless": "^4.16.1",
     "serverless-offline": "^14.4.0",
     "supertest": "^7.1.1",
     "ts-node": "^10.9.2"
