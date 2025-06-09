@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/cheerio": "^0.22.35",
     "@types/cors": "^2.8.18",
-    "@types/express": "^5.0.2",
+    "@types/express": "^5.0.3",
     "@types/node": "^22.15.30",
     "@types/supertest": "^6.0.3",
     "nodemon": "^3.1.10",
