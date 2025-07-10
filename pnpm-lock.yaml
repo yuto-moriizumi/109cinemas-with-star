@@ -132,7 +132,7 @@ importers:
         version: 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react':
         specifier: ^4.6.0
-        version: 4.6.0(vite@7.0.3(@types/node@24.0.12)(tsx@4.19.3))
+        version: 4.6.0(vite@7.0.4(@types/node@24.0.12)(tsx@4.19.3))
       eslint-plugin-react:
         specifier: ^7.37.5
         version: 7.37.5(eslint@9.30.1)
@@ -146,11 +146,11 @@ importers:
         specifier: ^26.1.0
         version: 26.1.0
       vite:
-        specifier: ^7.0.3
-        version: 7.0.3(@types/node@24.0.12)(tsx@4.19.3)
+        specifier: ^7.0.4
+        version: 7.0.4(@types/node@24.0.12)(tsx@4.19.3)
       vite-plugin-zip-pack:
         specifier: ^1.2.4
-        version: 1.2.4(vite@7.0.3(@types/node@24.0.12)(tsx@4.19.3))
+        version: 1.2.4(vite@7.0.4(@types/node@24.0.12)(tsx@4.19.3))
 
 packages:
 
@@ -3614,8 +3614,8 @@ packages:
       yaml:
         optional: true
 
-  vite@7.0.3:
-    resolution: {integrity: sha512-y2L5oJZF7bj4c0jgGYgBNSdIu+5HF+m68rn2cQXFbGoShdhV1phX9rbnxy9YXj82aS8MMsCLAAFkRxZeWdldrQ==}
+  vite@7.0.4:
+    resolution: {integrity: sha512-SkaSguuS7nnmV7mfJ8l81JGBFV7Gvzp8IzgE8A8t23+AxuNX61Q5H1Tpz5efduSN7NHC8nQXD3sKQKZAu5mNEA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -5453,7 +5453,7 @@ snapshots:
     dependencies:
       '@codegenie/serverless-express': 4.16.0
 
-  '@vitejs/plugin-react@4.6.0(vite@7.0.3(@types/node@24.0.12)(tsx@4.19.3))':
+  '@vitejs/plugin-react@4.6.0(vite@7.0.4(@types/node@24.0.12)(tsx@4.19.3))':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.27.4)
@@ -5461,7 +5461,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.19
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.0.3(@types/node@24.0.12)(tsx@4.19.3)
+      vite: 7.0.4(@types/node@24.0.12)(tsx@4.19.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -7889,10 +7889,10 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-zip-pack@1.2.4(vite@7.0.3(@types/node@24.0.12)(tsx@4.19.3)):
+  vite-plugin-zip-pack@1.2.4(vite@7.0.4(@types/node@24.0.12)(tsx@4.19.3)):
     dependencies:
       jszip: 3.10.1
-      vite: 7.0.3(@types/node@24.0.12)(tsx@4.19.3)
+      vite: 7.0.4(@types/node@24.0.12)(tsx@4.19.3)
 
   vite@6.3.5(@types/node@24.0.12)(tsx@4.19.3):
     dependencies:
@@ -7907,7 +7907,7 @@ snapshots:
       fsevents: 2.3.3
       tsx: 4.19.3
 
-  vite@7.0.3(@types/node@24.0.12)(tsx@4.19.3):
+  vite@7.0.4(@types/node@24.0.12)(tsx@4.19.3):
     dependencies:
       esbuild: 0.25.6
       fdir: 6.4.6(picomatch@4.0.2)
