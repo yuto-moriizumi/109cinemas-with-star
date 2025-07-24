@@ -94,11 +94,11 @@ importers:
         specifier: ^3.1.10
         version: 3.1.10
       serverless:
-        specifier: ^4.17.1
-        version: 4.17.1
+        specifier: ^4.17.2
+        version: 4.17.2
       serverless-offline:
         specifier: ^14.4.0
-        version: 14.4.0(serverless@4.17.1)
+        version: 14.4.0(serverless@4.17.2)
       supertest:
         specifier: ^7.1.4
         version: 7.1.4
@@ -361,8 +361,8 @@ packages:
     resolution: {integrity: sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/runtime@7.27.6':
-    resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
+  '@babel/runtime@7.28.2':
+    resolution: {integrity: sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -3206,8 +3206,8 @@ packages:
     peerDependencies:
       serverless: ^4.0.0
 
-  serverless@4.17.1:
-    resolution: {integrity: sha512-NzNzDtlAUt0nBf7keDYa/pC7qOO172oxbTqHIlylx9vBlrBU4lZQ772Bl+sdjvRjEfBf84K7GE4RXyFS4cXJxQ==}
+  serverless@4.17.2:
+    resolution: {integrity: sha512-mEtjk/43D+OvrROLP/gzeoy3RtrowMIPs1ahota7uuvxAjO3RVJcWIl1oAZXuoQIbAapRaXU+ZZYCrhHJxRF4g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -4284,7 +4284,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@babel/runtime@7.27.6': {}
+  '@babel/runtime@7.28.2': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -5223,7 +5223,7 @@ snapshots:
   '@testing-library/dom@10.4.0':
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/runtime': 7.27.6
+      '@babel/runtime': 7.28.2
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       chalk: 4.1.2
@@ -7446,7 +7446,7 @@ snapshots:
 
   serverless-http@3.2.0: {}
 
-  serverless-offline@14.4.0(serverless@4.17.1):
+  serverless-offline@14.4.0(serverless@4.17.2):
     dependencies:
       '@aws-sdk/client-lambda': 3.777.0
       '@hapi/boom': 10.0.1
@@ -7470,7 +7470,7 @@ snapshots:
       node-fetch: 3.3.2
       node-schedule: 2.1.1
       p-memoize: 7.1.1
-      serverless: 4.17.1
+      serverless: 4.17.2
       tree-kill: 1.2.2
       tsx: 4.19.3
       velocityjs: 2.0.6
@@ -7481,7 +7481,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  serverless@4.17.1:
+  serverless@4.17.2:
     dependencies:
       axios: 1.11.0
       axios-proxy-builder: 0.1.2
