@@ -94,11 +94,11 @@ importers:
         specifier: ^3.1.10
         version: 3.1.10
       serverless:
-        specifier: ^4.18.2
-        version: 4.18.2
+        specifier: ^4.20.2
+        version: 4.20.2
       serverless-offline:
         specifier: ^14.4.0
-        version: 14.4.0(serverless@4.18.2)
+        version: 14.4.0(serverless@4.20.2)
       supertest:
         specifier: ^7.1.4
         version: 7.1.4
@@ -1646,6 +1646,10 @@ packages:
 
   ansi-regex@6.1.0:
     resolution: {integrity: sha512-7HSX4QQb4CspciLpVFwyRe79O3xsIZDDLER21kERQ71oaPodF8jL725AgJMFAYbooIqolJoRLuM81SpeUkpkvA==}
+    engines: {node: '>=12'}
+
+  ansi-regex@6.2.2:
+    resolution: {integrity: sha512-Bq3SmSpyFHaWjPk8If9yc6svM8c56dB5BAtW4Qbw5jHTwwXXcTLoRMkpDJp6VL0XzlWaCHTXrkFURMYmD0sLqg==}
     engines: {node: '>=12'}
 
   ansi-styles@4.3.0:
@@ -3263,8 +3267,8 @@ packages:
     peerDependencies:
       serverless: ^4.0.0
 
-  serverless@4.18.2:
-    resolution: {integrity: sha512-mixSLpv07I2bpLQwa8kf1JhLom90iYsjKas6tcK7YDZSrmEPbDshLycUCYP3wN/nUHuQI67ITyjK5Dul7YU2ZA==}
+  serverless@4.20.2:
+    resolution: {integrity: sha512-AWUzYKekW5mT5qRBrIOvi5E0pw8OWen6MLO1KxtTH7/b9els2i+gtegfDBa0DhiSCg6Hph8CBIllfQY4hmXKUw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -5731,6 +5735,8 @@ snapshots:
 
   ansi-regex@6.1.0: {}
 
+  ansi-regex@6.2.2: {}
+
   ansi-styles@4.3.0:
     dependencies:
       color-convert: 2.0.1
@@ -7591,7 +7597,7 @@ snapshots:
 
   serverless-http@4.0.0: {}
 
-  serverless-offline@14.4.0(serverless@4.18.2):
+  serverless-offline@14.4.0(serverless@4.20.2):
     dependencies:
       '@aws-sdk/client-lambda': 3.777.0
       '@hapi/boom': 10.0.1
@@ -7615,7 +7621,7 @@ snapshots:
       node-fetch: 3.3.2
       node-schedule: 2.1.1
       p-memoize: 7.1.1
-      serverless: 4.18.2
+      serverless: 4.20.2
       tree-kill: 1.2.2
       tsx: 4.19.3
       velocityjs: 2.0.6
@@ -7626,7 +7632,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  serverless@4.18.2:
+  serverless@4.20.2:
     dependencies:
       axios: 1.12.2
       axios-proxy-builder: 0.1.2
@@ -7787,7 +7793,7 @@ snapshots:
 
   strip-ansi@7.1.2:
     dependencies:
-      ansi-regex: 6.1.0
+      ansi-regex: 6.2.2
 
   strip-final-newline@3.0.0: {}
 
