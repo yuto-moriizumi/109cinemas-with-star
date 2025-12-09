@@ -16,20 +16,20 @@
   "license": "ISC",
   "dependencies": {
     "@vendia/serverless-express": "^4.12.6",
-    "axios": "^1.13.1",
+    "axios": "^1.13.2",
     "cheerio": "^1.1.2",
     "cors": "^2.8.5",
-    "express": "^5.1.0",
+    "express": "^5.2.0",
     "serverless-http": "^4.0.0"
   },
   "devDependencies": {
     "@types/cheerio": "^1.0.0",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
-    "@types/node": "^24.9.2",
+    "@types/node": "^24.10.0",
     "@types/supertest": "^6.0.3",
-    "nodemon": "^3.1.10",
-    "serverless": "^4.22.0",
+    "nodemon": "^3.1.11",
+    "serverless": "^4.26.1",
     "serverless-offline": "^14.4.0",
     "supertest": "^7.1.4",
     "ts-node": "^10.9.2"
