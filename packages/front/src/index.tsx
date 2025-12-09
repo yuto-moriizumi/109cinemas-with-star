@@ -7,14 +7,19 @@ const articleElements = document.querySelectorAll('article');
 
 articleElements.forEach((articleElement) => {
   // 映画IDを取得 (article要素内のaタグのhrefから取得)
-  const movieLink =
-    articleElement.querySelector<HTMLAnchorElement>('div.main a');
+  // Workaround for jsdom v27 querySelector regression: use getElementsByTagName instead
+  const mainDiv = articleElement.getElementsByClassName('main')[0];
+  const movieLink = mainDiv?.getElementsByTagName('a')[0] as
+    | HTMLAnchorElement
+    | undefined;
   // href="/movies/4479.html" or "/movies/4479.html?t=tomiya" のような形式を想定
   const href = movieLink?.getAttribute('href');
   const movieIdMatch = href?.match(/\/movies\/(\d+)\.html/);
   const movieId = movieIdMatch ? movieIdMatch[1] : null; // 例: "4479"
   // 映画タイトルを取得
-  const titleElement = articleElement.querySelector('div.main header h1');
+  // Workaround for jsdom v27 querySelector regression: use getElementsByTagName instead
+  const header = mainDiv?.getElementsByTagName('header')[0];
+  const titleElement = header?.getElementsByTagName('h1')[0];
   const movieTitle = titleElement?.textContent?.trim() || null;
 
   if (movieId && movieTitle) {
@@ -24,9 +29,9 @@ articleElements.forEach((articleElement) => {
     // スタイルを削除
 
     // article要素内の div.main header に追加
-    const headerElement = articleElement.querySelector('div.main header');
-    if (headerElement) {
-      headerElement.appendChild(reviewContainer);
+    // Workaround for jsdom v27 querySelector regression: reuse header from above
+    if (header) {
+      header.appendChild(reviewContainer);
 
       // Reactコンポーネントをレンダリング
       ReactDOM.createRoot(reviewContainer).render(
