@@ -19,24 +19,27 @@ describe('index.tsx script', () => {
 
   test('記事要素にRatingコンポーネントを正しく挿入し、評価を表示する', async () => {
     // Removed .only
-    // Arrange: Set up mock DOM structure
+    // Arrange: Set up mock DOM structure (new 109cinemas.net structure)
+    // New structure: div.main > a > header > h1
     setupDOM(`
       <article>
         <div class="main">
-          <a href="/movies/12345.html">Movie Link</a>
-          <header>
-            <h1>Test Movie Title</h1>
-            <!-- Rating component will be inserted here -->
-          </header>
+          <a href="/movies/12345.html">
+            <header>
+              <h1>Test Movie Title</h1>
+            </header>
+          </a>
+          <!-- Rating component will be inserted here as a sibling of <a> -->
         </div>
       </article>
       <article>
         <div class="main">
-          <a href="/movies/67890.html?t=other">Another Link</a>
-          <header>
-            <h1>Another Movie</h1>
-            <!-- Rating component will be inserted here -->
-          </header>
+          <a href="/movies/67890.html?t=other">
+            <header>
+              <h1>Another Movie</h1>
+            </header>
+          </a>
+          <!-- Rating component will be inserted here as a sibling of <a> -->
         </div>
       </article>
     `);
@@ -80,14 +83,15 @@ describe('index.tsx script', () => {
   });
 
   test('映画IDが見つからない場合、Ratingコンポーネントを挿入しない', async () => {
-    // Arrange: Set up DOM without a valid movie link href
+    // Arrange: Set up DOM without a valid movie link href (new structure)
     setupDOM(`
       <article>
         <div class="main">
-          <a>Invalid Link</a>
-          <header>
-            <h1>Movie Without ID</h1>
-          </header>
+          <a>
+            <header>
+              <h1>Movie Without ID</h1>
+            </header>
+          </a>
         </div>
       </article>
     `);
@@ -105,14 +109,15 @@ describe('index.tsx script', () => {
   });
 
   test('映画タイトルが見つからない場合、Ratingコンポーネントを挿入しない', async () => {
-    // Arrange: Set up DOM without an h1 title
+    // Arrange: Set up DOM without an h1 title (new structure)
     setupDOM(`
       <article>
         <div class="main">
-          <a href="/movies/11111.html">Movie Link</a>
-          <header>
-            <!-- No h1 title -->
-          </header>
+          <a href="/movies/11111.html">
+            <header>
+              <!-- No h1 title -->
+            </header>
+          </a>
         </div>
       </article>
     `);
