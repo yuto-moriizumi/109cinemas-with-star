@@ -94,11 +94,11 @@ importers:
         specifier: ^3.1.11
         version: 3.1.11
       serverless:
-        specifier: ^4.29.4
-        version: 4.29.4
+        specifier: ^4.30.0
+        version: 4.30.0
       serverless-offline:
         specifier: ^14.4.0
-        version: 14.4.0(serverless@4.29.4)
+        version: 14.4.0(serverless@4.30.0)
       supertest:
         specifier: ^7.2.2
         version: 7.2.2
@@ -3337,8 +3337,9 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sax@1.4.3:
-    resolution: {integrity: sha512-yqYn1JhPczigF94DMS+shiDMjDowYO6y9+wB/4WgO0Y19jWYk0lQ4tuG5KI7kj4FTp1wxPj5IFfcrz/s1c3jjQ==}
+  sax@1.4.4:
+    resolution: {integrity: sha512-1n3r/tGXO6b6VXMdFT54SHzT9ytu9yr7TaELowdYpMqY/Ao7EnlQGmAQ1+RatX7Tkkdm6hONI2owqNx2aZj5Sw==}
+    engines: {node: '>=11.0.0'}
 
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
@@ -3374,8 +3375,8 @@ packages:
     peerDependencies:
       serverless: ^4.0.0
 
-  serverless@4.29.4:
-    resolution: {integrity: sha512-6/DfG+KuumqbRnAidTlOEzcl8l8QuDb/yfXRbNhhabjZW96IBkwUuorMTyGj/dSL1cFU52KJtmBO/uWgpkZPfA==}
+  serverless@4.30.0:
+    resolution: {integrity: sha512-ao6aHKlEwk81KtxdXAtW5Cnw3MPyWF0EnDCgqP/EReFa/a1tat98yhGm2qJ6joaY+UCpIVxWfmkOvjohztClSw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -7707,7 +7708,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sax@1.4.3: {}
+  sax@1.4.4: {}
 
   saxes@6.0.0:
     dependencies:
@@ -7746,7 +7747,7 @@ snapshots:
 
   serverless-http@4.0.0: {}
 
-  serverless-offline@14.4.0(serverless@4.29.4):
+  serverless-offline@14.4.0(serverless@4.30.0):
     dependencies:
       '@aws-sdk/client-lambda': 3.777.0
       '@hapi/boom': 10.0.1
@@ -7770,7 +7771,7 @@ snapshots:
       node-fetch: 3.3.2
       node-schedule: 2.1.1
       p-memoize: 7.1.1
-      serverless: 4.29.4
+      serverless: 4.30.0
       tree-kill: 1.2.2
       tsx: 4.19.3
       velocityjs: 2.0.6
@@ -7781,7 +7782,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  serverless@4.29.4:
+  serverless@4.30.0:
     dependencies:
       axios: 1.13.2
       axios-proxy-builder: 0.1.2
@@ -8371,7 +8372,7 @@ snapshots:
 
   xml2js@0.6.2:
     dependencies:
-      sax: 1.4.3
+      sax: 1.4.4
       xmlbuilder: 11.0.1
 
   xmlbuilder@11.0.1: {}
