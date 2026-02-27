@@ -27,7 +27,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^25.3.2",
-    "@types/supertest": "^6.0.3",
+    "@types/supertest": "^7.2.0",
     "nodemon": "^3.1.14",
     "serverless": "^4.33.0",
     "serverless-offline": "^14.5.0",
