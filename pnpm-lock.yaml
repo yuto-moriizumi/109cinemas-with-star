@@ -94,11 +94,11 @@ importers:
         specifier: ^3.1.14
         version: 3.1.14
       serverless:
-        specifier: ^4.38.0
-        version: 4.38.0
+        specifier: ^4.38.1
+        version: 4.38.1
       serverless-offline:
         specifier: ^14.7.3
-        version: 14.7.3(serverless@4.38.0)
+        version: 14.7.3(serverless@4.38.1)
       supertest:
         specifier: ^7.2.2
         version: 7.2.2
@@ -2929,8 +2929,8 @@ packages:
     peerDependencies:
       serverless: ^4.0.0
 
-  serverless@4.38.0:
-    resolution: {integrity: sha512-zMV5It0LyQyg4ckWpKeczJ2ECFcWrfrwlgparuLiGkT2TvHFioE842zm1MAj6IoE7hU04Q28hUfgtzsSDIX1Gw==}
+  serverless@4.38.1:
+    resolution: {integrity: sha512-fQW3nGvlZRJ951Y1cF65IOOvPfyYjaViigZErV4JOLHjT+d79e3a9kB0xIkknWVRYpF4j/SiIDGRGZuwjGVdTg==}
     engines: {node: '>=18.17.0'}
     hasBin: true
 
@@ -3226,8 +3226,8 @@ packages:
   undici-types@8.3.0:
     resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
-  undici@6.25.0:
-    resolution: {integrity: sha512-ZgpWDC5gmNiuY9CnLVXEH8rl50xhRCuLNA97fAUnKi8RRuV4E6KG31pDTsLVUKnohJE0I3XDrTeEydAXRw47xg==}
+  undici@6.27.0:
+    resolution: {integrity: sha512-YmfV3YnEDzXRC5lZ2jWtWWHKGUm1zIt8AhesR1tens+HTNv+YZlN/dp6G727LOvMJ8xjP9Be7Y2Sdr96LDm+pg==}
     engines: {node: '>=18.17'}
 
   undici@7.25.0:
@@ -6594,7 +6594,7 @@ snapshots:
 
   serverless-http@4.0.0: {}
 
-  serverless-offline@14.7.3(serverless@4.38.0):
+  serverless-offline@14.7.3(serverless@4.38.1):
     dependencies:
       '@aws-sdk/client-lambda': 3.1069.0
       '@hapi/boom': 10.0.1
@@ -6617,7 +6617,7 @@ snapshots:
       node-fetch: 3.3.2
       node-schedule: 2.1.1
       p-memoize: 7.1.1
-      serverless: 4.38.0
+      serverless: 4.38.1
       tree-kill: 1.2.2
       tsx: 4.22.4
       velocityjs: 2.1.6
@@ -6627,10 +6627,10 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  serverless@4.38.0:
+  serverless@4.38.1:
     dependencies:
       rimraf: 5.0.10
-      undici: 6.25.0
+      undici: 6.27.0
 
   set-cookie-parser@3.1.0: {}
 
@@ -6974,7 +6974,7 @@ snapshots:
 
   undici-types@8.3.0: {}
 
-  undici@6.25.0: {}
+  undici@6.27.0: {}
 
   undici@7.25.0: {}
 
