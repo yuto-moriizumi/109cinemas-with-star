@@ -94,11 +94,11 @@ importers:
         specifier: ^3.1.14
         version: 3.1.14
       serverless:
-        specifier: ^4.39.0
-        version: 4.39.0
+        specifier: ^4.40.0
+        version: 4.40.0
       serverless-offline:
         specifier: ^14.7.4
-        version: 14.7.4(serverless@4.39.0)
+        version: 14.7.4(serverless@4.40.0)
       supertest:
         specifier: ^7.2.2
         version: 7.2.2
@@ -2961,8 +2961,8 @@ packages:
     peerDependencies:
       serverless: ^4.0.0
 
-  serverless@4.39.0:
-    resolution: {integrity: sha512-BKGwcJFbuOC3QCRf4wiKU2IT81OquxEGp69CA8cbvLz7N7gq6jZZEnrau3NcWWPMgsKJHOmqNpu9gReU9oS0aQ==}
+  serverless@4.40.0:
+    resolution: {integrity: sha512-5PePQZRgJPbyfSjrZUWL7ys7U50t69EeBhokZnAe3CPedPsFGiVcn0aJHi91dYJDluWfYMDJY5zizkBPp1XHgA==}
     engines: {node: '>=18.17.0'}
     hasBin: true
 
@@ -6683,7 +6683,7 @@ snapshots:
 
   serverless-http@4.0.0: {}
 
-  serverless-offline@14.7.4(serverless@4.39.0):
+  serverless-offline@14.7.4(serverless@4.40.0):
     dependencies:
       '@aws-sdk/client-lambda': 3.1075.0
       '@hapi/boom': 10.0.1
@@ -6706,7 +6706,7 @@ snapshots:
       node-fetch: 3.3.2
       node-schedule: 2.1.1
       p-memoize: 7.1.1
-      serverless: 4.39.0
+      serverless: 4.40.0
       tree-kill: 1.2.2
       tsx: 4.22.4
       velocityjs: 2.1.6
@@ -6716,7 +6716,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  serverless@4.39.0:
+  serverless@4.40.0:
     dependencies:
       rimraf: 5.0.10
       undici: 6.27.0
