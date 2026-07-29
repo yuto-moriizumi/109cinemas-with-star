@@ -52,7 +52,7 @@ importers:
         version: 8.65.0(eslint@9.39.2)(typescript@6.0.3)
       vitest:
         specifier: ^4.1.8
-        version: 4.1.8(@types/node@26.1.2)(@vitest/coverage-v8@4.1.8)(jsdom@30.0.0(@noble/hashes@1.8.0))(msw@2.15.0(@types/node@26.1.2)(typescript@6.0.3))(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4))
+        version: 4.1.8(@types/node@26.1.2)(@vitest/coverage-v8@4.1.8)(jsdom@30.0.1(@noble/hashes@1.8.0))(msw@2.15.0(@types/node@26.1.2)(typescript@6.0.3))(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4))
 
   packages/api:
     dependencies:
@@ -143,8 +143,8 @@ importers:
         specifier: ^0.5.3
         version: 0.5.3(eslint@9.39.2)
       jsdom:
-        specifier: ^30.0.0
-        version: 30.0.0(@noble/hashes@1.8.0)
+        specifier: ^30.0.1
+        version: 30.0.1(@noble/hashes@1.8.0)
       vite:
         specifier: ^8.1.5
         version: 8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4)
@@ -2277,8 +2277,8 @@ packages:
     resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
-  jsdom@30.0.0:
-    resolution: {integrity: sha512-JQHfRGmmKmaZoUAvIgff5jjG/0SzTQlGz8c7t72KzBzo8ZULEjAjnYE0sNwBOUA4QtWwYE2xoYitg8NFsmiYxA==}
+  jsdom@30.0.1:
+    resolution: {integrity: sha512-52v7mUVUfNQVYYqE1lcdaymWL0njO7lTLUog6ZvW2U5KsbiLk/GnZlVJ+qx0xfNJZ6Gn+KSpPNE52vurbxZwrA==}
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     peerDependencies:
       canvas: ^3.2.3
@@ -4614,7 +4614,7 @@ snapshots:
       obug: 2.1.1
       std-env: 4.1.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.8(@types/node@26.1.2)(@vitest/coverage-v8@4.1.8)(jsdom@30.0.0(@noble/hashes@1.8.0))(msw@2.15.0(@types/node@26.1.2)(typescript@6.0.3))(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4))
+      vitest: 4.1.8(@types/node@26.1.2)(@vitest/coverage-v8@4.1.8)(jsdom@30.0.1(@noble/hashes@1.8.0))(msw@2.15.0(@types/node@26.1.2)(typescript@6.0.3))(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4))
 
   '@vitest/expect@4.1.8':
     dependencies:
@@ -5896,7 +5896,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdom@30.0.0(@noble/hashes@1.8.0):
+  jsdom@30.0.1(@noble/hashes@1.8.0):
     dependencies:
       '@asamuzakjp/css-color': 6.0.5
       '@asamuzakjp/dom-selector': 8.3.0
@@ -6963,7 +6963,7 @@ snapshots:
       fsevents: 2.3.3
       tsx: 4.22.4
 
-  vitest@4.1.8(@types/node@26.1.2)(@vitest/coverage-v8@4.1.8)(jsdom@30.0.0(@noble/hashes@1.8.0))(msw@2.15.0(@types/node@26.1.2)(typescript@6.0.3))(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4)):
+  vitest@4.1.8(@types/node@26.1.2)(@vitest/coverage-v8@4.1.8)(jsdom@30.0.1(@noble/hashes@1.8.0))(msw@2.15.0(@types/node@26.1.2)(typescript@6.0.3))(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4)):
     dependencies:
       '@vitest/expect': 4.1.8
       '@vitest/mocker': 4.1.8(msw@2.15.0(@types/node@26.1.2)(typescript@6.0.3))(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(tsx@4.22.4))
@@ -6988,7 +6988,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 26.1.2
       '@vitest/coverage-v8': 4.1.8(vitest@4.1.8)
-      jsdom: 30.0.0(@noble/hashes@1.8.0)
+      jsdom: 30.0.1(@noble/hashes@1.8.0)
     transitivePeerDependencies:
       - msw
 
