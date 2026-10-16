@@ -24,7 +24,7 @@
     "prettier": "^3.9.10",
     "typescript-eslint": "^8.71.2",
     "@typescript-eslint/eslint-plugin": "^8.71.1",
-    "@typescript-eslint/parser": "^8.71.1",
+    "@typescript-eslint/parser": "^8.71.2",
     "@vitest/coverage-v8": "^5.0.0",
     "msw": "^2.15.0",
     "typescript": "^6.0.3",
